@@ -69,6 +69,31 @@ export class CriminosoService {
       ],
       status: "Em Liberdade",
     },
+    {
+      id: "3",
+      nome: "Manuel José Pereira",
+      alcunha: "Manel",
+      bi: "008901234LA045",
+      dataNascimento: new Date("1990-07-08"),
+      idade: 34,
+      genero: "M",
+      naturalidade: "Huambo",
+      endereco: "Bairro Operário, Luanda",
+      telefone: "+244 926 789 012",
+      descricaoFisica: "Baixo, gordo, careca, cicatriz na testa",
+      registroCriminal: [
+        {
+          id: "4",
+          dataOcorrencia: new Date("2023-03-12"),
+          tipoCrime: "Fraude",
+          descricao: "Fraude em documentos oficiais",
+          local: "Repartição Fiscal, Luanda",
+          provincia: "Luanda",
+          status: "Em Investigação",
+        },
+      ],
+      status: "Foragido",
+    },
   ]
 
   private criminososSubject = new BehaviorSubject<Criminoso[]>(this.criminosos)
